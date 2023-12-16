@@ -4,7 +4,7 @@ on: push
 jobs:
   build:
     name: Build Kernel by ${{ github.actor }}
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18
     steps:
     - name: Set swap to 10G
       uses: pierotofy/set-swap-space@master
@@ -14,12 +14,11 @@ jobs:
     - name: Build kernel
       run: |
         git clone https://github.com/oops-yu/test
-        cd test
-        chmod a+x env.sh
-        ./env.sh
-        export PATH=~/bin:$PATH
+        sudo apt install repo
+        mkdir kernel 
         cd kernel
-        repo init 
+        repo init -u https://android.googlesource.com/kernel/manifest
+        mv ../test/my.xml ./.repo/manifests/my.xml
         repo init -m my.xml
         repo sync -j8 
 
