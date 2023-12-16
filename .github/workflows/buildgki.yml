@@ -19,7 +19,7 @@ jobs:
         ./env.sh
         cd kernel
         repo init -m my.xml
-        repo sync -j8
+        repo sync -j8 
 
 
 
