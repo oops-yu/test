@@ -10,5 +10,5 @@ For more information on repo manifests, check out:
 https://gerrit.googlesource.com/git-repo/+/HEAD/docs/manifest-format.md
 -->
 <manifest>
-  <include name="default.xml" />
+  <include name="my.xml" />
 </manifest>

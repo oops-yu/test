@@ -110,3 +110,63 @@ PID: 11826 END: 1702717843548420608 :git command /workspaces/test/kernel/.repo/m
 
 PID: 11826 END: 1702717843548567040 :+++++++++++++++NEW COMMAND+++++++++++++++++++ starting new command: init, -u, https://android.googlesource.com/kernel/manifest
 
+PID: 23330 START: 1702719063835534592 :+++++++++++++++NEW COMMAND+++++++++++++++++++ starting new command: init, -m, my.zml
+
+PID: 23330 START: 1702719063849768960 :git command None ['git', 'config', '--file', '/workspaces/test/kernel/.repo/manifests.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspaces/test/kernel/.repo/manifests.git/config --includes --null --list 1>| 2>|
+
+PID: 23330 END: 1702719063853693952 :git command None ['git', 'config', '--file', '/workspaces/test/kernel/.repo/manifests.git/config', '--includes', '--null', '--list'] with debug: : git config --file /workspaces/test/kernel/.repo/manifests.git/config --includes --null --list 1>| 2>|
+
+PID: 23330 START: 1702719063854385664 :git command None ['git', 'config', '--file', '/home/codespace/.gitconfig', '--includes', '--null', '--list'] with debug: : git config --file /home/codespace/.gitconfig --includes --null --list 1>| 2>|
+
+PID: 23330 END: 1702719063858297344 :git command None ['git', 'config', '--file', '/home/codespace/.gitconfig', '--includes', '--null', '--list'] with debug: : git config --file /home/codespace/.gitconfig --includes --null --list 1>| 2>|
+
+PID: 23330 START: 1702719063860263424 :git command /workspaces/test/kernel/.repo/manifests.git ['git', 'fetch', '--quiet', 'origin', '--recurse-submodules=no', '--tags', '+refs/heads/common-android-mainline:refs/remotes/origin/common-android-mainline', '+refs/tags/*:refs/tags/*'] with debug: : export GIT_DIR=/workspaces/test/kernel/.repo/manifests.git
+: export GIT_OBJECT_DIRECTORY=/workspaces/test/kernel/.repo/manifests.git/objects
+: git fetch --quiet origin --recurse-submodules=no --tags +refs/heads/common-android-mainline:refs/remotes/origin/common-android-mainline +refs/tags/*:refs/tags/* 1>| 2>&1
+
+PID: 23330 END: 1702719063948201216 :git command /workspaces/test/kernel/.repo/manifests.git ['git', 'fetch', '--quiet', 'origin', '--recurse-submodules=no', '--tags', '+refs/heads/common-android-mainline:refs/remotes/origin/common-android-mainline', '+refs/tags/*:refs/tags/*'] with debug: : export GIT_DIR=/workspaces/test/kernel/.repo/manifests.git
+: export GIT_OBJECT_DIRECTORY=/workspaces/test/kernel/.repo/manifests.git/objects
+: git fetch --quiet origin --recurse-submodules=no --tags +refs/heads/common-android-mainline:refs/remotes/origin/common-android-mainline +refs/tags/*:refs/tags/* 1>| 2>&1
+
+PID: 23330 START: 1702719063948618240 :: load refs /workspaces/test/kernel/.repo/manifests.git
+
+PID: 23330 END: 1702719063949005568 :: load refs /workspaces/test/kernel/.repo/manifests.git
+
+PID: 23330 START: 1702719063949839360 :git command /workspaces/test/kernel/.repo/manifests.git ['git', 'config', '--get', 'trace2.eventtarget'] with debug: : git config --get trace2.eventtarget 1>| 2>|
+
+PID: 23330 END: 1702719063953640448 :git command /workspaces/test/kernel/.repo/manifests.git ['git', 'config', '--get', 'trace2.eventtarget'] with debug: : git config --get trace2.eventtarget 1>| 2>|
+
+PID: 23330 END: 1702719063953845248 :+++++++++++++++NEW COMMAND+++++++++++++++++++ starting new command: init, -m, my.zml
+
+PID: 23388 START: 1702719066659464704 :+++++++++++++++NEW COMMAND+++++++++++++++++++ starting new command: init, -m, my.xml
+
+PID: 23388 START: 1702719066669074176 :: parsing /workspaces/test/kernel/.repo/manifests.git/config
+
+PID: 23388 END: 1702719066669259264 :: parsing /workspaces/test/kernel/.repo/manifests.git/config
+
+PID: 23388 START: 1702719066669367040 :: parsing /home/codespace/.gitconfig
+
+PID: 23388 END: 1702719066669498112 :: parsing /home/codespace/.gitconfig
+
+PID: 23388 START: 1702719066674588928 :git command /workspaces/test/kernel/.repo/manifests.git ['git', 'fetch', '--quiet', 'origin', '--recurse-submodules=no', '--tags', '+refs/heads/common-android-mainline:refs/remotes/origin/common-android-mainline', '+refs/tags/*:refs/tags/*'] with debug: : export GIT_DIR=/workspaces/test/kernel/.repo/manifests.git
+: export GIT_OBJECT_DIRECTORY=/workspaces/test/kernel/.repo/manifests.git/objects
+: git fetch --quiet origin --recurse-submodules=no --tags +refs/heads/common-android-mainline:refs/remotes/origin/common-android-mainline +refs/tags/*:refs/tags/* 1>| 2>&1
+
+PID: 23388 END: 1702719066765755392 :git command /workspaces/test/kernel/.repo/manifests.git ['git', 'fetch', '--quiet', 'origin', '--recurse-submodules=no', '--tags', '+refs/heads/common-android-mainline:refs/remotes/origin/common-android-mainline', '+refs/tags/*:refs/tags/*'] with debug: : export GIT_DIR=/workspaces/test/kernel/.repo/manifests.git
+: export GIT_OBJECT_DIRECTORY=/workspaces/test/kernel/.repo/manifests.git/objects
+: git fetch --quiet origin --recurse-submodules=no --tags +refs/heads/common-android-mainline:refs/remotes/origin/common-android-mainline +refs/tags/*:refs/tags/* 1>| 2>&1
+
+PID: 23388 START: 1702719066766541056 :: load refs /workspaces/test/kernel/.repo/manifests.git
+
+PID: 23388 END: 1702719066767158784 :: load refs /workspaces/test/kernel/.repo/manifests.git
+
+PID: 23388 START: 1702719066772417280 :git command /workspaces/test/kernel/.repo/manifests.git ['git', 'config', '--system', '--includes', '--null', '--list'] with debug: : git config --system --includes --null --list 1>| 2>|
+
+PID: 23388 END: 1702719066777741824 :git command /workspaces/test/kernel/.repo/manifests.git ['git', 'config', '--system', '--includes', '--null', '--list'] with debug: : git config --system --includes --null --list 1>| 2>|
+
+PID: 23388 START: 1702719066778542848 :git command /workspaces/test/kernel/.repo/manifests.git ['git', 'config', '--get', 'trace2.eventtarget'] with debug: : git config --get trace2.eventtarget 1>| 2>|
+
+PID: 23388 END: 1702719066784039424 :git command /workspaces/test/kernel/.repo/manifests.git ['git', 'config', '--get', 'trace2.eventtarget'] with debug: : git config --get trace2.eventtarget 1>| 2>|
+
+PID: 23388 END: 1702719066784173568 :+++++++++++++++NEW COMMAND+++++++++++++++++++ starting new command: init, -m, my.xml
+
