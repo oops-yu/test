@@ -19,7 +19,6 @@ jobs:
         ./env.sh
         export PATH=~/bin:$PATH
         cd kernel
-        repo init -m my.xml
         repo sync -j8 
 
 
