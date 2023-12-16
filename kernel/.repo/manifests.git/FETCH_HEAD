@@ -1,0 +1,7 @@
+d35a8382bfeba713123cc928f62644670a7dc2f2		branch 'common-android-mainline' of https://android.googlesource.com/kernel/manifest
+fcb7f3c1f0c5537bd3404a77b907f1042fdfadc9		tag 'android-wear-11.0.0_r0.1' of https://android.googlesource.com/kernel/manifest
+c4c2be3c2dce15300e57e933a41f1c57a6e56e59		tag 'android-wear-11.0.0_r0.2' of https://android.googlesource.com/kernel/manifest
+33ebc8d3150717c56f31b437aa131f8e8cb272d3		tag 'android-wear-11.0.0_r0.3' of https://android.googlesource.com/kernel/manifest
+32834bb52791df8af3aa49ad5e69de780b3eef6e		tag 'android-wear-11.0.0_r0.4' of https://android.googlesource.com/kernel/manifest
+d91d6226227125b2db86d0d1c83cd89f1fdb31da		tag 'android-wear-11.0.0_r0.5' of https://android.googlesource.com/kernel/manifest
+1d047bc89d1cdc657afd625ac13fc257d57e9642		tag 'android-wear-11.0.0_r0.6' of https://android.googlesource.com/kernel/manifest
