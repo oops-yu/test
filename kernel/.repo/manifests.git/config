@@ -17,3 +17,6 @@
 [user]
 	name = oops-yu
 	email = 473211890@qq.com
+[repo]
+	existingprojectcount = 0
+	newprojectcount = 11
