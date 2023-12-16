@@ -18,13 +18,14 @@ jobs:
         chmod a+x ~/bin/repo
         export PATH=~/bin:$PATH
         git clone https://github.com/oops-yu/test
-        sudo apt install repo
         mkdir kernel 
         cd kernel
         repo init -u https://android.googlesource.com/kernel/manifest
         mv ../test/my.xml ./.repo/manifests/my.xml
         repo init -m my.xml
         repo sync -j8 
+        LTO=thin BUILD_CONFIG=common/build.config.gki.aarch64 build/build.sh
+
 
 
 
