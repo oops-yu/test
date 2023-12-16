@@ -17,6 +17,7 @@ jobs:
         cd test
         chmod a+x env.sh
         ./env.sh
+        export PATH=~/bin:$PATH
         cd kernel
         repo init -m my.xml
         repo sync -j8 
