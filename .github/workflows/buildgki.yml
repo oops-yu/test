@@ -13,8 +13,8 @@ jobs:
 
     - name: Build kernel
       run: |
+        cd ..
         pwd
-        ls
 
 
 
