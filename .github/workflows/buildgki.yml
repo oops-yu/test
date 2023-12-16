@@ -13,9 +13,13 @@ jobs:
 
     - name: Build kernel
       run: |
-        cd ..
-        pwd
-        ls -a
+        git clone https://github.com/oops-yu/test
+        cd test
+        chmod a+x env.sh
+        ./env.sh
+        cd kernel
+        repo init -m my.xml
+        repo sync -j8
 
 
 
