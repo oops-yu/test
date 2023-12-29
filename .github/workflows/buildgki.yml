@@ -14,6 +14,7 @@ jobs:
     - name: Build kernel
       run: |
         mkdir ~/bin
+        mkdir ~/out
         curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
         chmod a+x ~/bin/repo
         cd ~
@@ -25,13 +26,13 @@ jobs:
         mv ../test/my.xml ./.repo/manifests/my.xml
         repo init -m my.xml
         repo sync -j8
-        tools/bazel build --config=fast //common:kernel_aarch64_dist
+        tools/bazel run //common:kernel_aarch64_dist -- --dist_dir=~/out
 
     - name: Upload KernelImg
       uses: actions/upload-artifact@v3
       with:
         name: Kernel
-        path: ~/kernel/out/android13-5.10/dist/Image
+        path: ~/out/Image
 
 
 
