@@ -16,6 +16,7 @@ jobs:
         mkdir ~/bin
         curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
         chmod a+x ~/bin/repo
+        cd ~
         export PATH=~/bin:$PATH
         git clone https://github.com/oops-yu/test
         mkdir kernel 
@@ -23,8 +24,14 @@ jobs:
         repo init -u https://android.googlesource.com/kernel/manifest
         mv ../test/my.xml ./.repo/manifests/my.xml
         repo init -m my.xml
-        repo sync -j8 
-        LTO=thin BUILD_CONFIG=common/build.config.gki.aarch64 build/build.sh
+        repo sync -j8
+        tools/bazel build --config=fast //common:kernel_aarch64_dist
+
+    - name: Upload KernelImg
+      uses: actions/upload-artifact@v3
+      with:
+        name: Kernel
+        path: ~/kernel/out/android13-5.10/dist/Image
 
 
 
