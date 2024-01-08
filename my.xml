@@ -1,7 +1,7 @@
 <manifest>
 <remote name="aosp" fetch="https://android.googlesource.com/" review="https://android.googlesource.com/"/>
 <default revision="master-kernel-build-2022" remote="aosp" sync-j="4"/>
-<superproject name="kernel/superproject" remote="aosp" revision="common-android13-5.10-2023-12"/>
+<superproject name="kernel/superproject" remote="aosp" revision="common-android13-5.15-2023-12"/>
 <project path="build/kernel" name="kernel/build" revision="4464f9f77c4f918d0c3d26735a3f016fc021a685">
 <linkfile dest="tools/bazel" src="kleaf/bazel.sh"/>
 <linkfile dest="WORKSPACE" src="kleaf/bazel.WORKSPACE"/>
@@ -16,13 +16,12 @@
 <linkfile dest="build/abi" src="abi"/>
 <linkfile dest="build/static_analysis" src="static_analysis"/>
 </project>
-<project path="hikey-modules" name="kernel/hikey-modules" revision="a068c3379fab21a8719c03e661c7d9de97583244" upstream="android13-5.10" dest-branch="android13-5.10"/>
-<project path="common" name="kernel/common" revision="2488984317380f5cd94ba9d2fc76e1918f375e13" upstream="android13-5.10-2023-12" dest-branch="android13-5.10-2023-12">
+<project path="common" name="kernel/common" revision="40c7fb3ef038594691c63c353669e7523f67cb73" upstream="android13-5.15-2023-12" dest-branch="android13-5.15-2023-12">
 <linkfile dest=".source_date_epoch_dir" src="."/>
 </project>
 <project path="kernel/tests" name="kernel/tests" revision="42a77670ce44d6e19a6fbb8b93fa0b06f009a3a4"/>
 <project path="kernel/configs" name="kernel/configs" revision="b3cc2bc03dab303c54a9ce1f709f8ee315eb311d"/>
-<project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" revision="423eb1c11b3ec94ab40900529c0bf7aca94cf4fa" upstream="android13-5.10" dest-branch="android13-5.10"/>
+<project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" revision="deede4fddac274575cb0e26498fc0f4a718229fb" upstream="android13-5.15" dest-branch="android13-5.15"/>
 <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" revision="9f759dee5cdc5f85d076c642a192f6a9232f7058"/>
 <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" clone-depth="1" revision="007101a451907c5369db5002ddf7b14dcefb7864"/>
 <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" revision="f6813860e16b2fa1461a15e7b8a3127dfdee021a"/>

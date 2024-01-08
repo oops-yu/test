@@ -25,8 +25,8 @@ jobs:
         repo init -u https://android.googlesource.com/kernel/manifest
         mv ../test/my.xml ./.repo/manifests/my.xml
         repo init -m my.xml
-        repo sync -j8
-        tools/bazel run //common:kernel_aarch64_dist -- --dist_dir=~/out
+        repo sync 
+        LTO=thin tools/bazel build --config=fast //common:kernel_aarch64_dist
 
     - name: Upload KernelImg
       uses: actions/upload-artifact@v3
