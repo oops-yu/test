@@ -26,13 +26,14 @@ jobs:
         mv ../test/my.xml ./.repo/manifests/my.xml
         repo init -m my.xml
         repo sync 
-        LTO=thin tools/bazel build --config=fast //common:kernel_aarch64_dist
+        curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
+        LTO=thin tools/bazel build --config=fast //common:kernel_aarch64
 
     - name: Upload KernelImg
       uses: actions/upload-artifact@v3
       with:
         name: Kernel
-        path: ~/out/Image
+        path: ~/kernel/bazel-bin/common/kernel_aarch64/Image
 
 
 
