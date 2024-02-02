@@ -27,7 +27,7 @@ jobs:
         repo init -m my.xml
         repo sync 
         curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
-        LTO=thin tools/bazel build --config=fast //common:kernel_aarch64
+        LTO=thin BUILD_CONFIG=common/build.config.gki.aarch64 build/build.sh
 
     - name: Upload KernelImg
       uses: actions/upload-artifact@v3
